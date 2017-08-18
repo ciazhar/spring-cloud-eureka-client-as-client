@@ -20,7 +20,7 @@ public class SImpleController {
         return restTemplate.getForObject("http://eureka-client/api/halo",String.class);
     }
 
-    public String fallback(Throwable hystrixCommand){
+    public String fallback(){
         return "Fallback Halo";
     }
 }
